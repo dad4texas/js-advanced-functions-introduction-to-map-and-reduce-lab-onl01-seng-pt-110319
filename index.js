@@ -34,3 +34,13 @@ function reduceToTotal(arr, start = 0) {
     }
     return start
 }
+
+function reduceToAllTrue(arr) {
+    
+    for(let i = 0; i< arr.length; i++) {
+        if(arr[i] === false || arr[i] === undefined) {
+            return false
+        }
+    }
+    return true
+}

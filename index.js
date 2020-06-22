@@ -26,3 +26,11 @@ function mapToSquare(arr) {
     }
     return newArr;
 }
+
+function reduceToTotal(arr, start = 0) {
+    
+    for(let i = 0; i< arr.length; i++) {
+        start += arr[i]
+    }
+    return start
+}
